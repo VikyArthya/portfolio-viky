@@ -10,11 +10,11 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc list-inside pl-2">
         <li>PHP</li>
-        <li>Laravel</li>
-        <li>MySQL</li>
-        <li>PostgreSQL</li>
-        <li>React.js</li>
-        <li>Next.js</li>
+        <li>Laravel, Codeigniter</li>
+        <li>Git</li>
+        <li>MySQL, PostgreSQL</li>
+        <li>Next.Js, React.Js</li>
+        <li>HTML, CSS, Javascript, Tailwind CSS, Bootsrap</li>
       </ul>
     ),
   },
@@ -23,8 +23,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc list-inside pl-2">
-        <li>BS in Computer Science</li>
-        <li>Web Development Bootcamp</li>
+        <li>Dian Nuswantoro University - Bachelor of Informatics Engineering</li>
+        <li>SMK 8 Semarang - Software Engineering</li>
       </ul>
     ),
   },
@@ -33,8 +33,10 @@ const TAB_DATA = [
     id: "certification",
     content: (
       <ul className="list-disc list-inside pl-2">
-        <li>Laravel Certification</li>
-        <li>React.js Certification</li>
+        <li>Golang Back End - Lumoshive Academy</li>
+        <li>TOEFL - Dian Nuswantoro University</li>
+        <li>Data Statistician - DISKOMINFO Jateng</li>
+        <li>IT Support - PLN Jateng & DIY</li>
       </ul>
     ),
   },
@@ -50,9 +52,9 @@ const AboutSection = () => {
     });
   };
   return (
-    <section className="text-white">
+    <section id="about" className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src={"/images/about.png"} width={500} height={500} />
+        <Image src={"/images/about.png"} width={500} height={500} className="rounded-3xl" alt="About Me" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">

@@ -40,44 +40,46 @@ const EmailSection = () => {
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md"> I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!</p>
+        <p className="text-[#ADB7BE] mb-4 max-w-md"> I'm currently open to new opportunities. Feel free to reach out if you have any questions or collaboration ideas — I'll do my best to respond promptly.</p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/VikyArthya" target="_blank" rel="noopener noreferrer">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.linkedin.com/in/vikyarthyasaputra/" target="_blank" rel="noopener noreferrer">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
       </div>
       <div>
-        {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">Email sent successfully!</p>
-        ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
-            <div className="mb-6">
-              <label htmlFor="email" className="text-white block mb-2 text-sm font-medium">
-                Your email
-              </label>
-              <input name="email" type="email" id="email" required className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5" placeholder="jacob@google.com" />
+        <div className="flex flex-col space-y-6 text-sm text-gray-100 bg-[#18191E] border border-[#33353F] rounded-lg p-6">
+          <div className="flex items-center space-x-3">
+            <Image src="/images/gmail.png" alt="Email" width={20} height={20} />
+            <div>
+              <span className="block text-white font-medium">Email Me</span>
+              <a href="mailto:vikyarthya1945@gmail.com" className="text-[#9CA2A9] hover:underline">
+                vikyarthya1945@gmail.com
+              </a>
             </div>
-            <div className="mb-6">
-              <label htmlFor="subject" className="text-white block text-sm mb-2 font-medium">
-                Subject
-              </label>
-              <input name="subject" type="text" id="subject" required className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5" placeholder="Just saying hi" />
+          </div>
+          <div className="flex items-center space-x-3">
+            <Image src="/images/whatsapp.png" alt="WhatsApp" width={20} height={20} />
+            <div>
+              <span className="block text-white font-medium">WhatsApp Me</span>
+              <a href="https://wa.me/6287735397457" target="_blank" rel="noopener noreferrer" className="text-[#9CA2A9] hover:underline">
+                +62 877-3539-7457
+              </a>
             </div>
-            <div className="mb-6">
-              <label htmlFor="message" className="text-white block text-sm mb-2 font-medium">
-                Message
-              </label>
-              <textarea name="message" id="message" className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5" placeholder="Let's talk about..." />
+          </div>
+          <div className="flex items-center space-x-3">
+            <Image src="/images/instagram.png" alt="Instagram" width={20} height={20} />
+            <div>
+              <span className="block text-white font-medium">Instagram</span>
+              <a href="https://instagram.com/vikyarthyaa" target="_blank" rel="noopener noreferrer" className="text-[#9CA2A9] hover:underline">
+                @vikyarthyaa
+              </a>
             </div>
-            <button type="submit" className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full">
-              Send Message
-            </button>
-          </form>
-        )}
+          </div>
+        </div>
       </div>
     </section>
   );
