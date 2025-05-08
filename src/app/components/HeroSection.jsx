@@ -35,7 +35,7 @@ const HeroSection = () => {
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
           <div className="rounded-full bg-[#181818] w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden relative">
-            <Image src="/images/ppnew.png" alt="Hero Image" width={400} height={400} className="object-cover w-full h-full" />
+            <Image src="/images/profil.png" alt="Hero Image" width={400} height={400} className="object-cover w-full h-full" />
           </div>
         </div>
       </div>
