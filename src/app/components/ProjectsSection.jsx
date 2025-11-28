@@ -69,6 +69,46 @@ const projectData = [
     tag: ["all", "web_apps"],
     tech: ["Laravel", "Filament", "MySQL", "Tailwind CSS", "REST API"],
   },
+  {
+    id: 9,
+    title: "Masyarakat Coach Indonesia",
+    description: "Structured and practical coaching class using WordPress",
+    image: "/images/projects/mci.png",
+    tag: ["all", "web_apps"],
+    tech: ["WordPress", "Elementor" ],
+  },
+  {
+    id: 10,
+    title: "ProMeat Palembang",
+    description: "Ecommerce website for meat products using WordPress WooCommerce",
+    image: "/images/projects/promeat.png",
+    tag: ["all", "web_apps"],
+    tech: ["WordPress", "Elementor", "WooCommerce"],
+  },
+  {
+    id: 11,
+    title: "Flow Sublimation",
+    description: "Clothing company profile website using WordPress",
+    image: "/images/projects/flow.png",
+    tag: ["all", "web_apps"],
+    tech: ["WordPress", "Elementor" ],
+  },
+  {
+    id: 12,
+    title: "Portfolio Viky",
+    description: "Personal portfolio website using Next JS and Tailwind CSS",
+    image: "/images/projects/resume.png",
+    tag: ["all", "web_apps"],
+    tech: ["Next JS", "Tailwind CSS", "React JS", "Framer Motion" ],
+  },
+  {
+    id: 13,
+    title: "YukNabung",
+    description: "Budget management application using Next JS and Tailwind CSS",
+    image: "/images/projects/yuknabung.png",
+    tag: ["all", "web_apps"],
+    tech: ["Next JS", "Supabase", "Tailwind CSS", "Prisma" ],
+  },
 ];
 const ProjectsSection = () => {
   const [tag, setTag] = useState("all");

@@ -10,7 +10,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 export default function Home() {
   return (
     <ErrorBoundary>
-      <div className="flex min-h-screen flex-col bg-[#121212]">
+      <div className="flex min-h-screen flex-col">
         <Navbar/>
         <div className="container mt-24 mx-auto px-12 py-4">
           <ErrorBoundary>

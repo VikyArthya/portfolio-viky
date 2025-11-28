@@ -89,6 +89,15 @@ export default function RootLayout({ children }) {
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          backgroundColor: '#000000',
+          backgroundImage: 'url("https://www.transparenttextures.com/patterns/skulls.png")',
+          backgroundRepeat: 'repeat',
+          backgroundSize: 'auto',
+          backgroundAttachment: 'fixed',
+          backgroundPosition: '0 0',
+          backgroundBlendMode: 'overlay',
+        }}
       >
         {children}
       </body>
