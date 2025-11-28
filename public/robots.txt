@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-viky.vercel.app/sitemap.xml
+
+# Block common non-content paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /_error/
+Disallow: /404
+
+# Allow search engines to index the portfolio
+Crawl-delay: 1

@@ -11,6 +11,7 @@ const projectData = [
     description: "A comprehensive school management system for SMK Palapa Semarang, built with Laravel Filament to manage student, teacher, and academic data.",
     image: "/images/projects/palapa.png",
     tag: ["all", "web_apps"],
+    tech: ["Laravel", "Filament", "MySQL", "Tailwind CSS"],
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const projectData = [
     description: "A scrap metal management system designed for TJ Scraps Metal, developed using Laravel Livewire to streamline operations.",
     image: "/images/projects/tjmetal.png",
     tag: ["all", "web_apps"],
+    tech: ["Laravel", "Livewire", "MySQL", "Bootstrap", "JavaScript"],
   },
   {
     id: 3,
@@ -25,27 +27,31 @@ const projectData = [
     description: "A custom ERP system developed with CodeIgniter 3 to optimize business operations for PT Mitra Karya Analitika.",
     image: "/images/projects/mika.png",
     tag: ["all", "erp_systems"],
+    tech: ["CodeIgniter 3", "MySQL", "jQuery", "Bootstrap"],
   },
   {
     id: 4,
     title: "PT Kota Jati Furniture",
-    description: "Develop ERP system using Odoo 14 and customing module accounting, sales, inventory",
+    description: "Develop ERP system using Odoo 14 and customizing modules for accounting, sales, and inventory management.",
     image: "/images/projects/kjati.jpeg",
     tag: ["all", "erp_systems"],
+    tech: ["Odoo 14", "Python", "PostgreSQL", "XML", "JavaScript"],
   },
   {
     id: 5,
     title: "Yayasan Lembaga Alkitab Indonesia",
-    description: "Develop Lembaga Alkitab Indonesia using odoo17 and custom module sales, inventory, purchase",
+    description: "Develop LAI system using Odoo 17 with custom modules for sales, inventory, and purchase management.",
     image: "/images/projects/lai.jpeg",
     tag: ["all", "erp_systems"],
+    tech: ["Odoo 17", "Python", "PostgreSQL", "XML"],
   },
   {
     id: 6,
     title: "PT Bangun Era Sejahtera Mandiri",
-    description: "Develop BESM using Odoo14 and customing module purchase order, PO buyer, sales, and accounting",
+    description: "Develop BESM ERP using Odoo 14 with customizing modules for purchase orders, PO buyer, sales, and accounting.",
     image: "/images/projects/besm.jpeg",
     tag: ["all", "erp_systems"],
+    tech: ["Odoo 14", "Python", "PostgreSQL", "XML", "JavaScript"],
   },
   {
     id: 7,
@@ -53,6 +59,7 @@ const projectData = [
     description: "An interactive web-based game developed for Subgrids, powered by Laravel to deliver a seamless and engaging player experience.",
     image: "/images/projects/subgrids.png",
     tag: ["all", "web_apps"],
+    tech: ["Laravel", "MySQL", "JavaScript", "CSS3", "HTML5"],
   },
   {
     id: 8,
@@ -60,6 +67,7 @@ const projectData = [
     description: "A centralized internal monitoring system for Jasa Raharja Central Java, built with Laravel Filament to streamline operations across all branches.",
     image: "/images/projects/jasaraharja.png",
     tag: ["all", "web_apps"],
+    tech: ["Laravel", "Filament", "MySQL", "Tailwind CSS", "REST API"],
   },
 ];
 const ProjectsSection = () => {
@@ -100,7 +108,13 @@ const ProjectsSection = () => {
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li key={index} variants={cardVariants} initial="initial" animate={isInView ? "animate" : "initial"} transition={{ duration: 0.3, delay: index * 0.4 }}>
-            <ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} />
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              imgUrl={project.image}
+              tech={project.tech}
+            />
           </motion.li>
         ))}
       </ul>
