@@ -12,10 +12,10 @@ const HeroSection = () => {
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500">Hello, I'm{""}</span>
             <br />
-            <TypeAnimation sequence={["Viky Arthya", 1000, "Web Developer", 1000, "Fullstack Developer", 1000]} wrapper="span" speed={50} repeat={Infinity} />
+            <TypeAnimation sequence={["Viky Arthya Saputra", 1000, "Web Developer", 1000, "ERP Developer", 1000]} wrapper="span" speed={50} repeat={Infinity} />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            I am a passionate web developer with expertise in Laravel, PHP, MySQL, PostgreSQL, Next.Js, and Tailwind CSS. I have a strong interest and talent in web development, covering both frontend and backend aspects.
+            Experienced ERP (Odoo) and Web Developer focused on integrating powerful enterprise systems. I create user-friendly solutions that streamline workflows and empower business scalability.
           </p>
           <Link
             href="/#contact"
